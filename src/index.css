@@ -5,6 +5,30 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
+.mnav{
+	background-color: rgb(0,0,1,.7);
+}
+.mbrand{
+	color: #47e018;
+	text-align: center;
+	letter-spacing: 2px;
+}
+.mbg{
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-image: url("./track.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity: 0.4;
+	filter:alpha(opacity=40);
+	height:100%;
+  width:100%;
+}
 
 code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
@@ -31,7 +55,10 @@ code {
 	background-color: #444444;
 	color: white;
 }
-
+.carousel-inner{
+  width:50%;
+  height: 55%;
+}
 .carousel-padding {
 	margin-top: 2em;
 	margin-bottom: 2em;

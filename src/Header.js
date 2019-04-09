@@ -3,11 +3,10 @@ import React, {Component} from 'react'
 class Header extends Component{
   render(){
     return (
-      <nav class="navbar navbar-expand-lg navbar-dark  sticky-top pb-1 bg-dark" >
-    <a class="navbar-brand h-1" href="./" >    
-    <label >Don Bosco<br/>Sports Academy</label>
+    <nav class="navbar navbar-expand-lg navbar-dark  sticky-top pb-1 mnav">
+    <a className="navbar-brand h-1 mbrand" href="./" >
+    <label className="mbrand">Don Bosco<br/>Sports Academy</label>
     </a>
-    {/* <a class="navbar-brand" href="#">DBIT</a> */}
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -40,6 +39,7 @@ class Header extends Component{
                   alt="" height="20" width="20"/> Softball</a></li>
               </ul>
             </li>
+
             {/*second level dropdown*/}
             <li class="dropright">
               <li class="dropdown-toggle dropdown-item " style={{cursor: 'pointer'}} id="navbarDropdown" role="button"
@@ -58,9 +58,22 @@ class Header extends Component{
         <li class="nav-item">
           <a class="nav-link" href="./">Alumini</a>
         </li>
-
       </ul>
     </div>
+    <div class="float-sm">
+     <div class="fl-fl float-fb">
+       <i class="fab fa-facebook-square fa-2x " style={{padding: "5px"}}></i>
+       <a href="" >Like us!</a>
+     </div>
+     <div class="fl-fl float-tw">
+       <i class="fab fa-twitter fa-2x" style={{padding: "5px"}}></i>
+       <a href="" >Follow us!</a>
+     </div>
+     <div class="fl-fl float-gp">
+         <i class="fab fa-youtube fa-2x" style={{padding: "5px"}}></i>
+       <a href="" >Subscribe!</a>
+     </div>
+   </div>
   </nav>
     )
   }
